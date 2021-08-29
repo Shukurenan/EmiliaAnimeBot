@@ -53,16 +53,21 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👩‍💼](https://telegra.ph/file/f40ed0b74e2b73016c887.jpg) `My name is` *Emilia*
-`I am an Anime Themed group management bot.
-Managed by Izumi for Your Telegram Group , I specialize in managing anime and similar themed groups.
+`Hey There!` [👩‍💼](https://telegra.ph/file/17cc1bf44f37dc7acc240.jpg) `My name is` *Pika Chu*
+`I am an BBTT group management bot.
+Managed by BBTT for Your Telegram Group , I specialize in managing anime and similar themed groups.
 You can find my list of available commands with! Hit` *🔐Commands*   
 """
+
+
+
+
+
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD EMILIA TO YOUR GROUP ➕️",url="t.me/EmiliaAnimeBot?startgroup=true"),
+            text="➕️ ADD PIKA CHU TO YOUR GROUP ➕️",url= ("http://t.me/PikaChu_BBTTRobot")
     ],
     [
         InlineKeyboardButton(
@@ -71,33 +76,34 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="📮 Update Channel", url="https://t.me/EmiliaBotUpdates"),
+            text="📮 For Help Channel", url="https://t.me/joinchat/XDWZaw-aRlUyYzI1",
     ],
     [
         InlineKeyboardButton(
-            text="📑 Loges", url="https://t.me/emiliabotlogs"),
+            text="📑 Loges", url="no"),
           
 
 
 InlineKeyboardButton(
-            text="🐱 SUPPORT", url="https://t.me/EmiliaAnimeBotSupport"
+            text="❤ SUPPORT", url="https://youtube.com/channel/UC9p6aECiudSXv9DwoWhs9lA"
+  "
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="🍀Anime Group🍀", url="https://t.me/animehubby"
+                    text="🔥SUPPORT🔥", url="https://youtube.com/channel/UC9p6aECiudSXv9DwoWhs9lA"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Emilia]("https://telegra.ph/file/83909a7bd542f97edcbb3.jpg") 
+`Hey there! My name is` [Pika Chu]("https://telegra.ph/file/83909a7bd542f97edcbb3.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paytm](#) or by contacting @izumibotifficial\
+ You can support the project via [Paytm](#) or by contacting @CrimsonDragon\
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -344,14 +350,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Emilia*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Pika Chu*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *Emilia*, let us know at .""",
+                 \n\nIf you have any question about *Pika Chu*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -377,8 +383,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *Emilia*
-                 \nHere is the [Our Anime Group](https://t.me/animehubby) .""",
+            text=""" Hi..👩‍💼 I'm *Pika Chu*
+                 \nHere is the [Our Logos Group]() https://t.me/BBTT_LOGOS_MAKERS""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -625,10 +631,10 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1610284626 and DONATION_LINK:
+        if DONATE_Here = "https://t.me/CrimsonDragon" and DONATION_LINK:
             update.effective_message.reply_text(
-                "You can also donate to the person currently running me "
-                "[here]({})".format(DONATION_LINK),
+                You can also donate to the person currently running me 
+                [here]({"https://t.me/BBTTbotssupport"}).format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
 
