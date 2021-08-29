@@ -54,7 +54,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 `Hey There!` [👩‍💼](https://telegra.ph/file/17cc1bf44f37dc7acc240.jpg) `My name is` *Pika Chu*
-`I am an BBTT group management bot.
+`I am an BBTT group management bot❤.
 Managed by BBTT for Your Telegram Group , I specialize in managing anime and similar themed groups.
 You can find my list of available commands with! Hit` *🔐Commands*   
 """
